@@ -1,23 +1,27 @@
 <template>
   <div id="app">
-    <Nav></Nav>
+    <Top></Top>
+    <Yuansong></Yuansong>
+    <Bottom></Bottom>
   </div>
 </template>
+
+
 <script>
-import Nav from './components/nav'
+import Top from './components/top'
+import Bottom from './components/bottom'
+import Yuansong from './components/yuansong'
+
 export default {
   name:'app',
   components:{
-    Nav
+    Top,
+    Bottom,
+    Yuansong
   }
-
 }
 </script>
 
 <style scoped>
-  #app{
-        width: 100%;
-        height: 1.88rem;
-        background: red;
-  }
+ 
 </style>

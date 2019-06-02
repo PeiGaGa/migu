@@ -1,0 +1,91 @@
+<template>
+  <div id="main">
+    <div id="top">
+      <div id="logo">
+        <a href="#">
+          <img src="http://www.migu.cn/assets/h5/image/index-111401/logo.png">
+        </a>
+      </div>
+      <a id="search">
+        <span id="search-text">这！就是原创</span>
+        <span id="serach-btn">搜索</span>
+      </a>
+      <a href id="icon">APP下载</a>
+      <a href id="list"></a>
+    </div>
+    <ul id="nav">
+      <li><a href="#">哈哈</a></li>
+      <li><a href="#">哈哈</a></li>
+      <li><a href="#">哈哈</a></li>
+      <li><a href="#">哈哈</a></li>
+      <li><a href="#">哈哈</a></li>
+      <li><a href="#">哈哈</a></li>
+    </ul>
+  </div>
+</template>
+
+
+<script>
+export default {
+  name: "top" //组件名字
+};
+</script>
+
+
+<style scoped>
+#main {
+  width: 100%;height: 1.88rem;
+  background: #1c1c1c;position: relative;
+}
+#top {
+  width: 100%;
+  display: flex;
+  align-content: center;
+}
+#logo{
+  height: .66rem;
+}
+#logo img{
+    display: block;
+    margin: .21rem 0 0 .21rem;  
+}
+#search{
+    display: block;float: right;
+    width: 3.2rem;height: .63rem;
+    margin: .21rem .26rem 0 .2rem;
+    position: relative;
+    background: #2e2e2e;
+    border-radius: .2rem;line-height: .63rem;
+}
+#search-text{
+   display: inline-block;width: 2rem; margin-left: .2rem;
+}
+#serach-btn{
+  display: inline-block;width: .6rem;color: #c3c3c3;
+}
+#icon {
+    width: 1.3rem;height: .63rem;color: aliceblue;margin-top: .2rem;
+    line-height: .6rem;text-align: center;border: 2px solid aliceblue;
+    border-radius: 45%;font-size: .3rem;
+}
+#list {
+    float: right;background: red;
+    width: .85rem;height: .63rem;
+     margin: .21rem .26rem 0 .2rem;
+}
+
+#nav{
+  position:absolute;
+  bottom: 0;
+  background-color: #353535;
+  height: .83rem;width: 100%;
+
+}
+#nav li{
+  float: left;
+}
+#nav li a{
+  color: #fff;font-size: .31rem;display: inline-block;
+  padding: 0 .3rem;height: .83rem;line-height: .83rem;
+}
+</style>

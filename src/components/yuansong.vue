@@ -2,6 +2,11 @@
     <div>
         <div id="box">
            <div id="nav">
+               <!-- <div id="text">
+                   <span id="title">音乐</span>
+                   <span id="more">更多</span>
+               </div>
+               <img src=""> -->
                <ul>
                    <li><a href="#">咪咕</a></li>
                    <li><a href="#">咪咕</a></li>

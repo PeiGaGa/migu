@@ -1,5 +1,5 @@
 <template>
-  <div>
+  <div id="main">
     <div id="nav">
         <div>
             <a href>
@@ -29,6 +29,11 @@ export default {
 
 
 <style>
+#main{
+        width: 100%;
+        height: 1.88rem;
+        background: red;
+}
 #nav {
   width: 100%;
   height: 1.88rem;

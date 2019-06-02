@@ -1,23 +1,24 @@
 <template>
   <div id="app">
     <Nav></Nav>
+    <Home></Home>  
+    
+    
   </div>
 </template>
 <script>
-import Nav from './components/nav'
+import Nav from './components/nav/nav'
+import Home from './components/home/home'
 export default {
   name:'app',
   components:{
-    Nav
+    Nav,
+    Home
   }
 
 }
 </script>
 
 <style scoped>
-  #app{
-        width: 100%;
-        height: 1.88rem;
-        background: red;
-  }
+ 
 </style>

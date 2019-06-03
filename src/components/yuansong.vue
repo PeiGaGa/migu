@@ -2,11 +2,11 @@
     <div>
         <div id="box">
            <div id="nav">
-               <!-- <div id="text">
-                   <span id="title">音乐</span>
-                   <span id="more">更多</span>
+               <div id="text">
+                   <h2>音乐</h2>
+                   <span>更多</span>
+               <a href="#"><img src="http://www.migu.cn:8080/12001/upload/graphicLink/20190529142556257490.jpg"></a>
                </div>
-               <img src=""> -->
                <ul>
                    <li><a href="#">咪咕</a></li>
                    <li><a href="#">咪咕</a></li>
@@ -63,7 +63,20 @@ export default {
         margin: 0 .2rem;
     }
     #nav{
-        width: 100%;height: .85rem;
+        width: 100%;overflow: hidden;
+    }
+     #text{
+        position: relative;
+    }
+    #text h2{
+        color: #333;padding: .2rem 0;
+    }
+    #text span{
+        position: absolute;right: 0;top: .4rem;
+        font-size: .26rem;
+    }
+    #text img{
+        width: 100%;
     }
     #nav li{
         float: left;font-size: .31rem;
@@ -93,5 +106,6 @@ export default {
         color: #999;font-size: .24rem;
     }
 
+   
 </style>
 

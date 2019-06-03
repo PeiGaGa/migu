@@ -28,7 +28,7 @@ export default {
 
 <style scoped>
     #box{
-        position:absolute;bottom: 0;
+        /* position:absolute;bottom: 0; */
         background-color:#f2f2f2;
         width: 100%;text-align: center;
         font-size: .21rem;
@@ -38,7 +38,7 @@ export default {
         background-color: #f2f2f2;
     }
     #box ul{
-        margin: .31rem 0;width: 100%;display: flex;
+        margin: .3rem 0;width: 100%;display: flex;
         justify-content: space-around;
     }
     #box ul li{

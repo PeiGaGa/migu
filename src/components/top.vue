@@ -20,6 +20,9 @@
       <li><a href="#">哈哈</a></li>
       <li><a href="#">哈哈</a></li>
       <li><a href="#">哈哈</a></li>
+      <li><a href="#">哈哈</a></li>
+      <li><a href="#">哈哈</a></li>
+      <li><a href="#">哈哈</a></li>
     </ul>
   </div>
 </template>
@@ -64,7 +67,7 @@ export default {
   display: inline-block;width: .6rem;color: #c3c3c3;
 }
 #icon {
-    width: 1.3rem;height: .63rem;color: aliceblue;margin-top: .2rem;
+    width: 1.4rem;height: .63rem;color: aliceblue;margin-top: .2rem;
     line-height: .6rem;text-align: center;border: 2px solid aliceblue;
     border-radius: 45%;font-size: .3rem;
 }
@@ -76,16 +79,19 @@ export default {
 
 #nav{
   position:absolute;
-  bottom: 0;
+  bottom: 0;padding-left: .1rem; 
+  line-height: .83rem;
   background-color: #353535;
   height: .83rem;width: 100%;
-
+  /* display: flex;justify-content:space-around; */
+  overflow-x: scroll;
+  white-space: nowrap;
 }
 #nav li{
-  float: left;
+  float: left;font-size: .35rem;
+  margin: 0 .25rem;
 }
 #nav li a{
-  color: #fff;font-size: .31rem;display: inline-block;
-  padding: 0 .3rem;height: .83rem;line-height: .83rem;
+  color: #fff;
 }
 </style>

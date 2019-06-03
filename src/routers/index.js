@@ -9,7 +9,9 @@ export default new Router({
   routes: [
     {
      path:'/music',
-     component:()=>import('../components/nav/nav')
+
+     component:()=>import('../components/top'),
+
     },
    
   ]

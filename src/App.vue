@@ -1,21 +1,28 @@
 <template>
   <div id="app">
-    <Nav></Nav>
-    <Home></Home>  
-    
-    
+    <Top></Top>
+    <lbt></lbt>
+    <Yuansong></Yuansong>
+    <Bottom></Bottom>
   </div>
 </template>
+
+
 <script>
-import Nav from './components/nav/nav'
-import Home from './components/home/home'
+import Top from './components/top'
+import Bottom from './components/bottom'
+import Yuansong from './components/yuansong'
+import Lbt from  "./components/home/home.vue"
+
+
 export default {
   name:'app',
   components:{
-    Nav,
-    Home
+    Top,
+    Bottom,
+    Yuansong,
+    Lbt
   }
-
 }
 </script>
 

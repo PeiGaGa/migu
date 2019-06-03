@@ -5,9 +5,8 @@
       <van-swipe-item v-for="(item,index) in maxsrc" :key="index">
           <img :src=item.src>
       </van-swipe-item>
-</van-swipe>
+    </van-swipe>
     </div>
-    <div id="loding"></div>
   </div>
 </template>
 

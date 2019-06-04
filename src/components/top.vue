@@ -10,7 +10,7 @@
         <span id="search-text">这！就是原创</span>
         <span id="serach-btn">搜索</span>
       </a>
-      <router-link tag="a" href id="icon" to="./download">APP下载</router-link>
+      <router-link tag="a" href id="icon" to="/download">APP下载</router-link>
       <a href id="list"></a>
     </div>
     <div id="pox">

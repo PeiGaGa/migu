@@ -7,9 +7,9 @@
 </template>
 
 <script>
-import home from "../../src/components/home/home"
-import yuansong from "../../src/components/yuansong"
-import bottom from "../../src/components/bottom"
+import home from "../../components/home/home"
+import yuansong from "../../components/yuansong"
+import bottom from "../../components/bottom"
 export default {
     name:'index',
     components:{

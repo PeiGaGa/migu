@@ -3,34 +3,36 @@
     <div id="top">
       <div id="logo">
         <a href="#">
-          <img src="http://www.migu.cn/assets/h5/image/index-111401/logo.png">
+          <router-link tag="img" to="./index" src="http://www.migu.cn/assets/h5/image/index-111401/logo.png"></router-link>
         </a>
       </div>
       <a id="search">
         <span id="search-text">这！就是原创</span>
         <span id="serach-btn">搜索</span>
       </a>
-      <a href id="icon">APP下载</a>
+      <router-link tag="a" href id="icon" to="./download">APP下载</router-link>
       <a href id="list"></a>
     </div>
-    <ul id="nav">
-      <li><a href="#">哈哈</a></li>
-      <li><a href="#">哈哈</a></li>
-      <li><a href="#">哈哈</a></li>
-      <li><a href="#">哈哈</a></li>
-      <li><a href="#">哈哈</a></li>
-      <li><a href="#">哈哈</a></li>
-      <li><a href="#">哈哈</a></li>
-      <li><a href="#">哈哈</a></li>
-      <li><a href="#">哈哈</a></li>
-    </ul>
+    <div id="pox">
+       <ul id="nav">
+          <li><a href="#">哈哈</a></li>
+          <li><a href="#">哈哈</a></li>
+          <li><a href="#">哈哈</a></li>
+          <li><a href="#">哈哈</a></li>
+          <li><a href="#">哈哈</a></li>
+          <li><a href="#">哈哈</a></li>
+          <li><a href="#">哈哈</a></li>
+          <li><a href="#">哈哈</a></li>
+          <li><a href="#">哈哈</a></li>
+      </ul>
+    </div>
   </div>
 </template>
 
 
 <script>
 export default {
-  name: "top" //组件名字
+  name: "top", //组件名字
 };
 </script>
 
@@ -39,6 +41,9 @@ export default {
 #main {
   width: 100%;height: 1.88rem;
   background: #1c1c1c;position: relative;
+  position:fixed;
+  top: 0;
+  z-index: 10;
 }
 #top {
   width: 100%;
@@ -77,15 +82,19 @@ export default {
      margin: .21rem .26rem 0 .2rem;
 }
 
-#nav{
+#pox{
   position:absolute;
-  bottom: 0;padding-left: .1rem; 
+  bottom: 0;
+  padding-left: .1rem; 
   line-height: .83rem;
   background-color: #353535;
-  height: .83rem;width: 100%;
-  /* display: flex;justify-content:space-around; */
-  overflow-x: scroll;
-  white-space: nowrap;
+  height: .83rem;
+  width: 100%;
+}
+#nav{
+  overflow: auto;
+  display: flex;
+   white-space: nowrap;
 }
 #nav li{
   float: left;font-size: .35rem;

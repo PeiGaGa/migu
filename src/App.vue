@@ -2,7 +2,6 @@
   <div id="app">
     <Top></Top>
     <router-view></router-view>
-    
   </div>
 </template>
 

@@ -3,14 +3,14 @@
     <div id="top">
       <div id="logo">
         <a href="#">
-          <img src="http://www.migu.cn/assets/h5/image/index-111401/logo.png">
+          <router-link tag="img" to="./index" src="http://www.migu.cn/assets/h5/image/index-111401/logo.png"></router-link>
         </a>
       </div>
       <a id="search">
         <span id="search-text">这！就是原创</span>
         <span id="serach-btn">搜索</span>
       </a>
-      <a href id="icon">APP下载</a>
+      <router-link tag="a" href id="icon" to="./download">APP下载</router-link>
       <a href id="list"></a>
     </div>
     <div id="pox">
@@ -32,7 +32,7 @@
 
 <script>
 export default {
-  name: "top" //组件名字
+  name: "top", //组件名字
 };
 </script>
 

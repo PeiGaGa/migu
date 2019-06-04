@@ -11,7 +11,8 @@
         <span id="serach-btn">搜索</span>
       </a>
       <router-link tag="a" href id="icon" to="./download">APP下载</router-link>
-      <a href id="list"></a>
+      <!-- <v-touch tag="a" v-on: tap = "onTap = !onTap" id="list"></v-touch> -->
+      <a href="#" id="list" v-on:click="onTap=!onTap"></a>
     </div>
     <div id="pox">
        <ul id="nav">
@@ -26,6 +27,23 @@
           <li><a href="#">哈哈</a></li>
       </ul>
     </div>
+    <transition name="fade">
+      <div id="hdn" v-if="onTap">
+        <ul>
+          <li><a href="#">哈哈中心<span>>></span></a></li>
+          <li><a href="#">哈哈中心<span>>></span></a></li>
+          <li><a href="#">哈哈中心<span>>></span></a></li>
+          <li><a href="#">哈哈中心<span>>></span></a></li>
+          <li><a href="#">哈哈中心<span>>></span></a></li>
+          <li><a href="#">哈哈中心<span>>></span></a></li>
+          <li><a href="#">哈哈中心<span>>></span></a></li>
+        </ul>
+        <div>
+          <a href="#" id="ys">登入</a>
+          <a href="#" id="ys">注册</a>
+        </div>
+      </div>
+    </transition>
   </div>
 </template>
 
@@ -33,11 +51,60 @@
 <script>
 export default {
   name: "top", //组件名字
+  data(){
+    return{
+      onTap:false,
+    }
+  }
 };
 </script>
 
-
 <style scoped>
+.fade-enter-active, .fade-leave-active{
+  transition: opacity 1s;
+}
+.fade-enter, .fade-leave-to{
+  opacity: 0;
+}
+#hdn{
+  background: #1c1c1c;
+  position: absolute;
+  z-index: 10;
+  top: 1rem;
+  width: 100%;
+  height: 20rem;
+}
+#hdn ul{
+  width: 5.83rem;
+  margin: .83rem auto 0;
+}
+#hdn ul li{
+  border-bottom: 5px solid #313131;
+}
+#hdn ul li:last-child{
+  border-bottom: 5px solid #bebebe;
+}
+#hdn  ul a{
+  display: flex;
+  justify-content:space-between;
+  font-size: .4rem;
+  color: #fff;
+  line-height: .89rem;
+}
+#hdn div{
+  text-align: center;margin-top: .83rem;
+}
+#ys{
+  display: inline-block;
+  font-size: .31rem;
+  color: #fff;
+  width: 2.76rem;
+  height: .78rem;
+  line-height: .78rem;
+  border: 3px solid #7f7f7f;
+  margin: 0 .1rem;
+}
+
 #main {
   width: 100%;height: 1.88rem;
   background: #1c1c1c;position: relative;
@@ -103,4 +170,6 @@ export default {
 #nav li a{
   color: #fff;
 }
+
+
 </style>

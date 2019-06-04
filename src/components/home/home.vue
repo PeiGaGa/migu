@@ -44,6 +44,7 @@ export default {
 <style scoped>
 #lbt {
   width: 100%;
+  margin: 1.88rem 0 0 0;
 }
 #lbt img {
   height: 3.75rem;

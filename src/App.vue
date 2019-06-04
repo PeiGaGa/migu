@@ -1,27 +1,18 @@
 <template>
   <div id="app">
     <Top></Top>
-    <lbt></lbt>
-    <Yuansong></Yuansong>
-    <Bottom></Bottom>
+    <router-view></router-view>
+    
   </div>
 </template>
 
 
 <script>
 import Top from './components/top'
-import Bottom from './components/bottom'
-import Yuansong from './components/yuansong'
-import Lbt from  "./components/home/home.vue"
-
-
 export default {
   name:'app',
   components:{
     Top,
-    Bottom,
-    Yuansong,
-    Lbt
   }
 }
 </script>

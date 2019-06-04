@@ -13,17 +13,19 @@
       <a href id="icon">APP下载</a>
       <a href id="list"></a>
     </div>
-    <ul id="nav">
-      <li><a href="#">哈哈</a></li>
-      <li><a href="#">哈哈</a></li>
-      <li><a href="#">哈哈</a></li>
-      <li><a href="#">哈哈</a></li>
-      <li><a href="#">哈哈</a></li>
-      <li><a href="#">哈哈</a></li>
-      <li><a href="#">哈哈</a></li>
-      <li><a href="#">哈哈</a></li>
-      <li><a href="#">哈哈</a></li>
-    </ul>
+    <div id="pox">
+       <ul id="nav">
+          <li><a href="#">哈哈</a></li>
+          <li><a href="#">哈哈</a></li>
+          <li><a href="#">哈哈</a></li>
+          <li><a href="#">哈哈</a></li>
+          <li><a href="#">哈哈</a></li>
+          <li><a href="#">哈哈</a></li>
+          <li><a href="#">哈哈</a></li>
+          <li><a href="#">哈哈</a></li>
+          <li><a href="#">哈哈</a></li>
+      </ul>
+    </div>
   </div>
 </template>
 
@@ -39,6 +41,9 @@ export default {
 #main {
   width: 100%;height: 1.88rem;
   background: #1c1c1c;position: relative;
+  position:fixed;
+  top: 0;
+  z-index: 10;
 }
 #top {
   width: 100%;
@@ -77,15 +82,19 @@ export default {
      margin: .21rem .26rem 0 .2rem;
 }
 
-#nav{
+#pox{
   position:absolute;
   bottom: 0;padding-left: .1rem; 
   line-height: .83rem;
   background-color: #353535;
   height: .83rem;width: 100%;
-  /* display: flex;justify-content:space-around; */
-  overflow-x: scroll;
-  white-space: nowrap;
+  overflow-x: auto;
+ 
+}
+#nav{
+  overflow: auto;
+  display: flex;
+   white-space: nowrap;
 }
 #nav li{
   float: left;font-size: .35rem;

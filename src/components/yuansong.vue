@@ -86,8 +86,7 @@ export default {
         color: #e40077;
     }
     #nav a{
-        float:right;color: #666;font-size: .26rem;
-        display: inline-block;line-height: .85rem;
+        float:right;color: #666;line-height: .85rem;
     }
     #content ul{
         display: flex;justify-content:space-around;

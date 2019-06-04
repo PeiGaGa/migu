@@ -84,12 +84,12 @@ export default {
 
 #pox{
   position:absolute;
-  bottom: 0;padding-left: .1rem; 
+  bottom: 0;
+  padding-left: .1rem; 
   line-height: .83rem;
   background-color: #353535;
-  height: .83rem;width: 100%;
-  overflow-x: auto;
- 
+  height: .83rem;
+  width: 100%;
 }
 #nav{
   overflow: auto;

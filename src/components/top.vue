@@ -15,15 +15,7 @@
     </div>
     <div id="pox">
        <ul id="nav">
-          <li><a href="#">哈哈</a></li>
-          <li><a href="#">哈哈</a></li>
-          <li><a href="#">哈哈</a></li>
-          <li><a href="#">哈哈</a></li>
-          <li><a href="#">哈哈</a></li>
-          <li><a href="#">哈哈</a></li>
-          <li><a href="#">哈哈</a></li>
-          <li><a href="#">哈哈</a></li>
-          <li><a href="#">哈哈</a></li>
+          <router-link tag="li" :to=item.path v-for="(item,index) in navs" :key="index">{{item.name}}</router-link>
       </ul>
     </div>
   </div>
@@ -32,7 +24,37 @@
 
 <script>
 export default {
-  name: "top" //组件名字
+  name: "top",
+  data(){
+    return {
+          navs:[
+            {
+              path:'/music',
+              name:'音乐'
+            },
+            {
+              path:'/mp4',
+              name:'视频'
+            },
+            {
+              path:'/read',
+              name:'阅读'
+            },
+            {
+              path:'/game',
+              name:'游戏'
+            },
+            {
+              path:'/copplay',
+              name:'次元'
+            },
+            {
+              path:'/run',
+              name:'运动'
+            },
+          ]
+    }
+  }
 };
 </script>
 
@@ -99,8 +121,7 @@ export default {
 #nav li{
   float: left;font-size: .35rem;
   margin: 0 .25rem;
-}
-#nav li a{
   color: #fff;
 }
+
 </style>

@@ -5,6 +5,10 @@ module.exports = {
             '/product':{
                 target:'http://www.migu.cn',
                 chengeOrigin:true
+            },
+            '/read':{
+                target:'http://www.migu.cn',
+                chengeOrigin:true
             }
         }
 

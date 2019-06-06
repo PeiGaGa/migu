@@ -2,9 +2,10 @@
   <div id="app">
     <Top></Top>
     <router-view></router-view>
+   
+
   </div>
 </template>
-
 
 <script>
 import Top from './components/top'
@@ -12,6 +13,7 @@ export default {
   name:'app',
   components:{
     Top,
+    
   }
 }
 </script>

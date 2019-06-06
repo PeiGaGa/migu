@@ -1,13 +1,13 @@
 <template>
   <div id="app">
-    <Top></Top>
+    <Top v-if="$route.meta.TopFlag"></Top> 
     <router-view></router-view>
   </div>
 </template>
 
 
 <script>
-import Top from './components/top'
+import Top from '@components/top'
 export default {
   name:'app',
   components:{

@@ -6,17 +6,19 @@
           <router-link tag="img" to="./index" src="http://www.migu.cn/assets/h5/image/index-111401/logo.png"></router-link>
         </a>
       </div>
-      <a id="search">
+      <router-link tag="a" to="/search" id="search">
         <span id="search-text">这！就是原创</span>
         <span id="serach-btn">搜索</span>
-      </a>
-      <router-link tag="a" href id="icon" to="./download">APP下载</router-link>
+      </router-link>
+      <router-link tag="a" id="icon" to="./download">APP下载</router-link>
       <!-- <v-touch tag="a" v-on: tap = "onTap = !onTap" id="list"></v-touch> -->
       <a href="#" id="list" v-on:click="onTap=!onTap"></a>
     </div>
     <div id="pox">
        <ul id="nav">
-          <router-link tag="li" :to=item.path v-for="(item,index) in navs" :key="index">{{item.name}}</router-link>
+          <router-link tag="li" v-for="(item,index) in navs" :key="index" :to=item.path>{{item.name}}</router-link>
+          <!-- <router-link tag="li" to="/music">音乐</router-link>
+          <router-link tag="li" to="/read">音乐</router-link> -->
       </ul>
     </div>
     <transition name="fade">
@@ -41,6 +43,7 @@
 
 
 <script>
+import Bscroll from 'better-scroll'
 export default {
   name: "top",
   data(){
@@ -48,7 +51,7 @@ export default {
           navs:[
             {
               path:'/music',
-              name:'音乐'
+              name:'音乐',
             },
             {
               path:'/mp4',
@@ -70,11 +73,19 @@ export default {
               path:'/run',
               name:'运动'
             },
+            {
+              path:'/about',
+              name:'关于咪咕'
+            },
+            {
+              path:'/service',
+              name:'客服中心'
+            },
           ],
           onTap:false,
-    }
-  }
-};
+        }
+      },
+    };
 </script>
 
 <style scoped>
@@ -132,15 +143,17 @@ export default {
   width: 100%;
 }
 #nav{
-  overflow: auto;
+  overflow-x: auto;
   display: flex;
-
   white-space: nowrap;
 }
 #nav li{
   float: left;font-size: .35rem;
   margin: 0 .25rem;
   color: #fff;
+}
+#nav .router-link-active{
+  color: #e40077;
 }
 
 .fade-enter-active, .fade-leave-active{

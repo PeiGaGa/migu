@@ -31,7 +31,7 @@ export default {
         /* position:absolute;bottom: 0; */
         background-color:#f2f2f2;
         width: 100%;text-align: center;
-        font-size: .21rem;
+        font-size: .25rem;
         color: #999;
         line-height: .38rem;
         padding: .29rem 0;

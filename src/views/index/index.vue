@@ -7,16 +7,15 @@
 </template>
 
 <script>
-import home from "../../components/home/home"
-import yuansong from "../../components/yuansong"
-import bottom from "../../components/bottom"
+import home from "@components/home/home"
+import yuansong from "@components/yuansong"
+import bottom from "@components/bottom"
 export default {
     name:'index',
     components:{
         home,
         yuansong,
         bottom
-
     }
 }
 </script>

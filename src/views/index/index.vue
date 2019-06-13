@@ -15,7 +15,10 @@ export default {
     components:{
         home,
         yuansong,
-        bottom
+        bottom,
+        
+    },
+    methods:{
 
     }
 }

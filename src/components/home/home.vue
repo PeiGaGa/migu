@@ -48,5 +48,6 @@ export default {
 }
 #lbt img {
   height: 3.75rem;
+  width: 100%
 }
 </style>

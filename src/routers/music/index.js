@@ -1,5 +1,5 @@
 export default {
-    path:'/musics',
+    path:'/music',
     name:'music',
     component:()=>import('@views/music/music')
 }

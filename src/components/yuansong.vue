@@ -1,6 +1,6 @@
 <template>
     <div>
-        <div id="box">
+        <div id="zhong">
            <div id="nav">
                <div id="text">
                    <h2>音乐</h2>
@@ -59,7 +59,7 @@ export default {
 </script>
 
 <style scoped>
-    #box{
+    #zhong{
         margin: 0 .2rem;
     }
     #nav{
@@ -67,6 +67,7 @@ export default {
     }
      #text{
         position: relative;
+        width: 100%;
     }
     #text h2{
         color: #333;padding: .2rem 0;
@@ -86,7 +87,8 @@ export default {
         color: #e40077;
     }
     #nav a{
-        float:right;color: #666;line-height: .85rem;
+       color: #666;font-size: .26rem;
+        display: inline-block;line-height: .85rem;
     }
     #content ul{
         display: flex;justify-content:space-around;

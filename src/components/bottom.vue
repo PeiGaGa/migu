@@ -1,6 +1,6 @@
 <template>
     <div>
-        <div id="box">
+        <div id="bottom">
             <div>增值业务许可证A2.B1.B2-20100001 蜀ICP备15012512号-1</div>
             <div>Copyright  2019 咪咕文化科技有限公司</div>
             <ul>
@@ -27,7 +27,7 @@ export default {
 </script>
 
 <style scoped>
-    #box{
+    #bottom{
         /* position:absolute;bottom: 0; */
         background-color:#f2f2f2;
         width: 100%;text-align: center;
@@ -37,17 +37,17 @@ export default {
         padding: .29rem 0;
         background-color: #f2f2f2;
     }
-    #box ul{
+    #bottom ul{
         margin: .3rem 0;width: 100%;display: flex;
         justify-content: space-around;
     }
-    #box ul li{
+    #bottom ul li{
         float: left;
     }
-    #box ul li a{
+    #bottom ul li a{
         color: #999;
     }
-    #box p a{
+    #bottom p a{
         margin: 0 .13rem;color: #999;
     }
 </style>

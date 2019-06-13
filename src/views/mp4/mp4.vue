@@ -150,7 +150,10 @@ export default {
         width: 2.2rem;height: 2.2rem;
     }
     #content h3{
+        overflow: hidden;
+        text-overflow: ellipsis;
         font-weight: 400;margin-top:.1rem; 
+        width: 100%;
     }
     #content p{
         color: #999;font-size: .24rem;

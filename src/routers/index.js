@@ -1,7 +1,8 @@
 import Vue from 'vue'
 import Router from 'vue-router'
+
 import index from "./index/index"
-import music from "./music/index"
+import music from "./music"
 import download from "./download"
 import search from "./search"
 import mp4 from "./mp4"
@@ -12,7 +13,6 @@ import about from './about'
 import game from './game'
 import run from './run'
 
-
 Vue.use(Router)
 
 export default new Router({
@@ -20,7 +20,7 @@ export default new Router({
   routes: [
     {
      path:'/',
-     redirect:"/index"
+     redirect:"/index",
     },
     index,
     music,
@@ -33,12 +33,11 @@ export default new Router({
     about,
     game,
     run,
-    
 
-    // {
-    //   path:"**",
-    //   redirect:'/index'
-    // }
+    {
+      path:"**",
+      redirect:'/index'
+    }
 
    
   ]

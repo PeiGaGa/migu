@@ -8,8 +8,12 @@
 
 <script>
 import Top from '@components/top'
+
 export default {
   name:'app',
+  created(){
+    console.log(this)
+  },
   components:{
     Top,
   }

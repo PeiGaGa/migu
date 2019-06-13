@@ -1,8 +1,13 @@
 var path = require('path');
 module.exports = {
+    publicPath:"migu",
     devServer:{
         proxy:{
             '/product':{
+                target:'http://www.migu.cn',
+                chengeOrigin:true
+            },
+            '/read':{
                 target:'http://www.migu.cn',
                 chengeOrigin:true
             }

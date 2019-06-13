@@ -2,9 +2,10 @@
   <div id="app">
     <Top v-if="$route.meta.TopFlag"></Top> 
     <router-view></router-view>
+   
+
   </div>
 </template>
-
 
 <script>
 import Top from '@components/top'
@@ -16,6 +17,7 @@ export default {
   },
   components:{
     Top,
+    
   }
 }
 </script>

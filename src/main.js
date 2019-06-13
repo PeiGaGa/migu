@@ -3,10 +3,10 @@ import App from './App.vue'
 import router from './routers/index'
 import store from './store/index'
 import VueTouch from 'vue-touch'
-import { Swipe, SwipeItem } from 'vant';
+import { Swipe, SwipeItem } from 'vant'
 
-Vue.use(Swipe).use(SwipeItem);
 
+Vue.use(Swipe).use(SwipeItem) 
 Vue.config.productionTip = false
 
 Vue.use(VueTouch,{
@@ -18,3 +18,9 @@ new Vue({
   router,
   render: h => h(App)
 }).$mount('#app')
+
+
+
+
+
+
